@@ -1,1 +1,3 @@
 quarto-cli/
+.env
+dist

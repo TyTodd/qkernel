@@ -13,14 +13,14 @@ A CLI tool for executing Quarto (`.qmd`) code cells through a Jupyter kernel.
 
 ## Installation
 
+With uv (recommended)
 ```bash
-# Clone and install in development mode
-git clone https://github.com/yourusername/qkernel.git
-cd qkernel
-pip install -e .
+uv tool install qkernel
+```
 
-# Or with uv
-uv pip install -e .
+With pip
+```bash
+pip install qkernel
 ```
 
 ### Requirements
