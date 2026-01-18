@@ -1,0 +1,54 @@
+---
+title: "Long Running Cells Test"
+format: html
+---
+
+## Long Running Cells for Animation Testing
+
+```{python}
+#| label: quick_start
+print("Quick cell starting...")
+print("Done!")
+```
+
+```{python}
+#| label: short_delay
+import time
+print("Short delay (1 second)...")
+time.sleep(1)
+print("Completed!")
+```
+
+```{python}
+# | label: medium_delay
+import time
+
+print("Medium delay (3 seconds)...")
+for i in range(10):
+    time.sleep(1)
+    print(f"  Tick {i + 1}...")
+print("Finished!")
+```
+
+```{python}
+#| label: long_compute
+import time
+print("Long computation (5 seconds)...")
+time.sleep(5)
+result = sum(range(1000000))
+print(f"Result: {result}")
+```
+
+```{python}
+#| label: multi_output
+print("Line 1")
+print("Line 2")
+print("Line 3")
+x = 42
+x
+```
+
+```{python}
+#| label: final
+print("All done! 🎉")
+```

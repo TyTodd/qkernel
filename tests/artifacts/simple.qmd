@@ -1,0 +1,29 @@
+---
+title: "Simple Test"
+format: html
+---
+
+## Simple Test QMD File
+
+```{python}
+#| label: setup
+x = 10
+y = 20
+print(f"Setup: x={x}, y={y}")
+```
+
+```{python}
+#| label: compute
+result = x + y
+print(f"Result: {result}")
+```
+
+```{python}
+#| label: loop
+for i in range(5):
+    print(f"Step {i}")
+```
+
+```{python}
+print("Done!")
+```

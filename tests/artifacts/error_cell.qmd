@@ -1,0 +1,23 @@
+---
+title: "Error Test"
+format: html
+---
+
+## Error Test QMD File
+
+```{python}
+#| label: good
+x = 10
+print(f"x = {x}")
+```
+
+```{python}
+#| label: bad
+# This will raise an error
+undefined_variable
+```
+
+```{python}
+#| label: after_error
+print("This runs after error")
+```

@@ -1,0 +1,48 @@
+---
+title: "Mixed Output Types Test"
+format: html
+---
+
+## Mixed Output Types
+
+```{python}
+#| label: stdout_only
+print("This is stdout")
+print("Line 2")
+```
+
+```{python}
+#| label: result_only
+42 + 8
+```
+
+```{python}
+#| label: stderr_only
+import sys
+sys.stderr.write("This is stderr\n")
+```
+
+```{python}
+#| label: mixed_stdout_result
+print("Some output")
+"Final result"
+```
+
+```{python}
+#| label: html_display
+from IPython.display import display, HTML
+display(HTML('<b>Bold text</b>'))
+print("After HTML display")
+```
+
+```{python}
+#| label: empty_cell
+pass
+```
+
+```{python}
+#| label: multiline_result
+"""This is
+a multiline
+string result"""
+```

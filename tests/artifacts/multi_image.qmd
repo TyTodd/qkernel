@@ -1,0 +1,29 @@
+---
+title: "Multiple Images Test"
+format: html
+---
+
+## Multiple Images Test
+
+```{python}
+#| label: setup
+import matplotlib.pyplot as plt
+print("Setup complete!")
+```
+
+```{python}
+#| label: two_plots
+# Create first figure
+fig1, ax1 = plt.subplots(figsize=(4, 3))
+ax1.plot([1, 2, 3], [1, 4, 9], 'r-')
+ax1.set_title('Plot 1')
+plt.show()
+
+# Create second figure
+fig2, ax2 = plt.subplots(figsize=(4, 3))
+ax2.bar([1, 2, 3], [3, 1, 2])
+ax2.set_title('Plot 2')
+plt.show()
+
+print("Created two plots")
+```

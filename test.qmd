@@ -1,0 +1,36 @@
+---
+title: "Test Notebook"
+format: html
+---
+
+## Test QMD File
+
+```{python}
+#| label: setup
+import matplotlib.pyplot as plt
+print("Setup complete!")
+```
+
+```{python}
+#| label: compute
+x = [1, 2, 3, 4, 5]
+y = [i**2 for i in x]
+print(f"x = {x}")
+print(f"y = {y}")
+```
+
+```{python}
+# | label: plot
+
+print("Plotting...")
+plt.figure(figsize=(6, 4))
+plt.plot(x, y, "b-o")
+plt.xlabel("x")
+plt.ylabel("y")
+plt.title("Simple Plot")
+plt.show()
+```
+
+```{python}
+print("All done!")
+```

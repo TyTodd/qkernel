@@ -1,0 +1,14 @@
+---
+title: "Test Notebook"
+format: html
+---
+
+## Test QMD File
+
+```{python}
+#| label: setup
+import matplotlib
+matplotlib.use('Agg')  # Use non-interactive backend
+import matplotlib.pyplot as plt
+print("Setup complete!")
+```

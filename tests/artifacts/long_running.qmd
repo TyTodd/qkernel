@@ -1,0 +1,24 @@
+---
+title: "Long Running Cell Test"
+format: html
+---
+
+## Long Running Test
+
+```{python}
+#| label: quick
+print("Quick cell done")
+```
+
+```{python}
+#| label: long_sleep
+import time
+print("Starting long sleep...")
+time.sleep(30)  # Sleep for 30 seconds
+print("Long sleep done")
+```
+
+```{python}
+#| label: after_long
+print("This cell runs after the long one")
+```
